@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Vertically center align the VS separator */
+    padding: 30px; /* Increased padding */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-side {
+    text-align: center;
+    padding: 30px; /* Increased padding */
+    background-color: #ffcccc; /* Background color for Team 1 */
+}
+
+.vs {
+    font-size: 36px; /* Larger font size */
+    margin: 0 40px; /* Increased margin */
+}
+
+#team2 {
+    background-color: #ccffcc; /* Background color for Team 2 */
+}
+
+.team-logo {
+    width: 150px; /* Larger logo size */
+    height: 150px; /* Larger logo size */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 0; /* Increased margin */
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Increased margin */
+}
+
+/* Add margin-right to the "Previous" button to create a gap */
+#prev-team1 {
+    margin-right: 20px; /* Increased margin */
+}
+
+/* Add margin-right to the "Next" button of the second team selection div (Team 2) */
+#next-team2 {
+    margin-left: 20px; /* Increased margin */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 24px; /* Larger font size */
+    padding: 20px 0; /* Increased padding */
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button {
+    font-size: 18px; /* Larger font size */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Increased padding */
+    cursor: pointer;
+    border-radius: 10px; /* Larger rounded corners */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#submit-button {
+    margin-top: 30px; /* Increased margin */
+    font-size: 24px; /* Larger font size */
+    background-color: #4CAF50; /* Change button color */
+}
+
+#submit-button:hover {
+    background-color: #45a049;
+}
