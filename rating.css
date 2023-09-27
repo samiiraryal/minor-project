@@ -1,0 +1,105 @@
+/* Reset default styles and apply a global font-family */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* Player list containers (lineup and substitutes) */
+.lineup, .substitutes {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings (Lineup and Substitutes) */
+.lineup h2, .substitutes h2 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+    transition: background-color 0.2s;
+}
+
+/* Player name styling */
+.player-name {
+    flex: 1;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Player position styling */
+.player-position {
+    flex: 1;
+    color: #666;
+}
+
+/* Player rating styling */
+.player-rating {
+    flex: 1;
+    font-weight: bold;
+    color: #007BFF;
+    text-align: right;
+}
+
+/* Highlighted styles for selected playing player (red) */
+.highlighted-playing {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+/* Highlighted styles for selected substitute (green) */
+.highlighted-substitute {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Highlighted styles for swapped-out player (red) */
+.highlighted-swapped {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
