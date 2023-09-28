@@ -4,102 +4,82 @@ body {
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    background-image: url("images/football.jpg");
 }
 
-/* Header styling */
-header {
-    background-color: #333;
-    color: #fff;
+h1, h2, h3, h4 {
     text-align: center;
     padding: 1rem;
+    color: white;
+    font-family: cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
-/* Main content styling */
-main {
+.team-selection {
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
-/* Player list containers (lineup and substitutes) */
-.lineup, .substitutes {
-    background-color: #fff;
+.team {
+    width: 45%; /* Adjust the width as needed */
+}
+
+.player-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Section headings (Lineup and Substitutes) */
-.lineup h2, .substitutes h2 {
+.player-item {
+    display: flex;
+    align-items: center;
+    width: 25%; /* Show 4 players per row */
+    padding: 0.5rem;
+}
+
+.player-checkbox {
+    margin-right: 0.5rem;
+    transform: scale(3); /* Increase checkbox size */
+}
+
+.selected-players {
     text-align: center;
-    color: #333;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
+.selected-players-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding: 1rem 0;
-    transition: background-color 0.2s;
 }
 
-/* Player name styling */
-.player-name {
-    flex: 1;
-    font-weight: bold;
-    color: #333;
+.selected-players-team {
+    width: 45%; /* Adjust the width as needed */
 }
 
-/* Player position styling */
-.player-position {
-    flex: 1;
-    color: #666;
+#selected-players-a,
+#selected-players-b {
+    list-style-type: none;
+    padding: 0;
+    font-size: 3.2rem;
+    color: white; /* Increase font size for selected players list */
 }
 
-/* Player rating styling */
-.player-rating {
-    flex: 1;
-    font-weight: bold;
-    color: #007BFF;
-    text-align: right;
-}
-
-/* Highlighted styles for selected playing player (red) */
-.highlighted-playing {
-    background-color: #FF0000;
-    color: #fff;
-}
-
-/* Highlighted styles for selected substitute (green) */
-.highlighted-substitute {
-    background-color: #4CAF50;
-    color: #fff;
-}
-
-/* Highlighted styles for swapped-out player (red) */
-.highlighted-swapped {
-    background-color: #FF0000;
-    color: #fff;
-}
-
-/* Button styles */
-button {
+#select-players-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     background-color: #007BFF;
     color: #fff;
     border: none;
-    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 3px;
     transition: background-color 0.2s;
 }
 
-/* Button hover effect */
-button:hover {
+#select-players-btn:hover {
     background-color: #0056b3;
 }

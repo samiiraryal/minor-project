@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FIFA Player Ratings</title>
+    <title>Player Selection</title>
     <link rel="stylesheet" type="text/css" href="rating.css">
 </head>
 <body>
-    <header>
-        <h1>FIFA Player Ratings</h1>
-    </header>
-    <main>
-        <section class="lineup">
-            <h2>Lineup</h2>
-            <ul id="lineup-list">
-                <!-- Lineup players will be added dynamically using JavaScript -->
-            </ul>
-        </section>
+    <h1>Player Selection</h1>
+    <div class="team-selection">
+        <div class="team">
+            <h2>Team A</h2>
+            <div class="player-list" id="team-a-list">
+                <!-- Player items for Team A will be added dynamically using JavaScript -->
+            </div>
+        </div>
+        <div class="team">
+            <h2>Team B</h2>
+            <div class="player-list" id="team-b-list">
+                <!-- Player items for Team B will be added dynamically using JavaScript -->
+            </div>
+        </div>
+    </div>
+    <div class="selected-players">
+        <h3>Selected Players:</h3>
+        <div class="selected-players-list">
+            <div class="selected-players-team">
+                <h4>Team A</h4>
+                <ul id="selected-players-a"></ul>
+            </div>
+            <div class="selected-players-team">
+                <h4>Team B</h4>
+                <ul id="selected-players-b"></ul>
+            </div>
+        </div>
+    </div>
+    <button id="select-players-btn">Select Players</button>
 
-        <section class="substitutes">
-            <h2>Substitutes</h2>
-            <ul id="substitutes-list">
-                <!-- Substitute players will be added dynamically using JavaScript -->
-            </ul>
-        </section>
-    </main>
     <script src="rating.js"></script>
 </body>
 </html>
